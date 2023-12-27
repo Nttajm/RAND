@@ -3,7 +3,7 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  background-color: hsl(213, 45%, 8%);
+  background-color: var(--bkc);
   color: white;
 }
 
@@ -43,6 +43,22 @@ p, a {
 
 .vb {
   border: solid blue;
+}
+
+.i {
+  display: inline-block;
+}
+
+.th {
+  font-family: tahoma;
+}
+
+.tx-ss {
+  font-family: 12px;
+}
+
+.tx-s {
+  font-size: 17px;
 }
 
 .link-b {
@@ -87,7 +103,9 @@ div {
 }
 
 :root {
-  --ug: #383838
+  --ug:rgb(40, 40, 46);
+  --bkc:  hsl(213, 45%, 8%);
+  --idle: rgb(246, 160, 0);
 
 }
 
@@ -136,6 +154,10 @@ div {
   border-radius: 5px;
   caret-color: aliceblue;
   outline: none;
+}
+
+ .acsr:focus {
+  border: solid #9dabbe 1px;
 }
 
 .more-navbutton {
@@ -223,16 +245,65 @@ div {
   display: inline-block;
   padding-top: 10px;
   padding-left: 20px;
+  height: 100%;
 }
 
 .repositories {
-  padding-top: 35px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 35px;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
   margin-top: 10px;
   width: 300px;
   background-color: var(--ug);
   border-radius: 15px;
+  border: solid rgb(208, 208, 208) 1px
+}
+.rep-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  border-radius: 8px;
+  transition: background-color 0.225s;
 }
 
+.rep-button:hover {
+  background-color: rgb(61, 61, 70);
+}
+
+.foward-slash {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.pageimg {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.jumpto {
+  background-color: var(--bkc);
+  border: solid gray 1px;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.jumptob {
+  background-color: var(--bkc);
+  border: solid gray 1px;
+  border-radius: 12px;
+  transition: content 0.325s;
+}
+
+.jumptob:hover:before {
+  content: "Jump to ";
+}
+
+.sync-c {
+  margin-left: 5px;
+  color: var(--idle);
+}
