@@ -271,7 +271,9 @@
   { name: 'Cali Foster', id: 22234 },
   { name: 'Zane Solis', id: 13784 }
 ];
-const searchInput = document.getElementById('search');
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const searchInput = document.getElementById('search');
 const resultsDiv = document.getElementById('results');
 
 let classes = [
@@ -365,7 +367,7 @@ function updateSels() {
         const firstName = student.name.split(' ')[0];
         scrollsec.innerHTML += `
              <div class="s-item">
-                <img src="/v2/image.png" alt="pfp" class="mini-pfp">
+                <img src="image.png" alt="pfp" class="mini-pfp">
                 <span>${firstName}</span>
             </div>
         `
@@ -516,5 +518,6 @@ allTargets.forEach(item => {
     })
 })
 
+});
 </script>
 </html>
