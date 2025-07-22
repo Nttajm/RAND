@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(189, 45, 45);
+    font-family: roboto;
+}
+
+.moving_menu {
+    position: absolute;
+    top: 23%;
+    left: 25%;
+    display: flex;
+    gap: 9rem;
+}
+
+.setting_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    position: relative;
+    width: 5rem;
+}
+
+.set_drop {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.set_drop .discription {
+    width: 30rem;
+    color: white;
+}
+
+.set_drop .title {
+    font-size: 2.5rem;
+}
+
+.js_si_selected .set_drop .title {
+    animation: glow 0.6s infinite alternate;
+}
+
+.icon {
+    background-color: gray;
+    width: 105px;
+    height: 105px;
+}
+
+.icon_s {
+    background-color: gray;
+    width: 125px;
+    height: 125px;
+}
+
+.focus_point_1 {
+    border-left: solid 2px rgb(43, 255, 0);
+    position: absolute;
+    left: 25%;
+    width: 1rem;
+    height: 100%;
+}
+
+.focus_point_2 {
+    border-top: solid 2px rgb(60, 31, 223);
+    position: absolute;
+    top: 35%;
+    height: 1rem;
+    width: 100%;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px white, 0 0 10px white, 0 0 24px white;
+    }
+    50% {
+        text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    }
+    100% {
+        text-shadow: 0 0 30px white, 0 0 40px white, 0 0 50px white;
+    }
+}

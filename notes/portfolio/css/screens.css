@@ -1,0 +1,41 @@
+@media all and (width > 1280px) { 
+    :root {
+        --font-size: 16px;
+    }
+  }
+  
+  @media all and (min-width: 1124px) and (max-width: 1280px) { 
+        :root {
+            --font-size: 14px;
+        }
+
+        .fuse * {
+            font-size: 1.5rem;
+        }
+
+
+  }
+  
+  
+  @media all and (min-width: 768px) and (max-width: 1124px) { 
+    :root {
+        --font-size: 12px;
+    }
+
+    .fuse * {
+        font-size: 1.5rem;
+    }
+  
+  }
+  
+  @media all and (min-width: 480px) and (max-width: 768px) { 
+    .fuse * {
+        font-size: 1rem;
+    }
+  }
+  
+  @media all and (max-width: 480px) { 
+    .fuse * {
+        font-size: 1rem;
+    }
+  }

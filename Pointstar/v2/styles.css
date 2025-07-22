@@ -171,23 +171,28 @@ ul li.sel {
 }
 
 .admin-config {
-    padding-left: 7.1rem;
-    padding-top: 0.5rem;
+    padding-left: 17%;
+    padding-top: 1%;
     width: 98%;
     box-sizing: border-box;
 }
 
 .viewer {
-    width: 98%;
     box-sizing: border-box;
     background-color: rgb(215, 235, 253);
     min-height: 60vh;
-    width: 78%;
+    max-height: 90vh;
+    overflow-y: scroll;
+    width: 80vw;
     position: absolute;
     z-index: 2;
     scale: 1.01;
     border-radius: 0.6rem;
     padding: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .v-top {
@@ -326,9 +331,11 @@ input[type="checkbox"] {
     transition: 0.4s;
     opacity: 0;
     height: 0;
+    pointer-events: none;
 }
 
 #results.open {
     opacity: 1;
     height: fit-content;
+    pointer-events: all;
 }
